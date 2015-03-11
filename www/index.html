@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <!-- gri tema -->
+    <!--<head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/git/jquery.mobile-git.min.css"> 
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+        <script src="js/index.js"></script>
+        <title>Nevarkuzen SK</title>
+    </head>-->
+    <!-- siyah tema -->
+    <!--<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+        <script src="js/index.js"></script>
+        <title>Nevarkuzen SK</title>
+    </head>-->
+    <!-- flat ui -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- working
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jqm.min.js"></script>
+        working-->
+        
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        
+        
+        <!--working
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.mobile-1.4.0.min.js"></script>
+        working-->
+        
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="header" data-theme="a">
+                <h1>NEVARKUZEN SK</h1>
+            </div>
+            <div class="ui-content" role="main">
+                
+                <div align="center">
+                    <img src="img/logo.png">
+                    <a data-theme="c" class="ui-btn ui-corner-all" href="#players" data-transition="slide">OYUNCULAR</a>
+                    <a data-theme="c" class="ui-btn ui-corner-all"  href="#news" data-transition="slide" >HABERLER</a>
+                    <a data-theme="c" class="ui-btn ui-corner-all"  href="#scores" data-transition="slide" >SONUÇLAR</a>
+                    <a data-theme="c" class="ui-btn ui-corner-all"  href="#games" data-transition="slide" >FİKSTÜR</a>
+                </div>  
+            </div> 
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>
+        </div>
+        
+        <div data-role="page" id="players" >
+            <div data-role="header" data-theme="a">
+                 <a data-theme="c" href="#home" data-iconpos="notext" data-role="button" data-icon="back" title="Back" data-transition="slide" data-direction="reverse">Back</a>
+                 <h1>OYUNCULAR</h1> 
+            </div>
+            <div data-role="content">
+                <ul data-role="listview"  id="players-list" data-inset="true" data-filter="true">
+                    
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>  
+        </div>
+        
+        <div data-role="page" id="player-details">
+            <div data-role="header" data-theme="a">
+                <a data-theme="c" href="#players" data-iconpos="notext" data-role="button" data-icon="back" title="Back" data-transition="slide" data-direction="reverse">Back</a>
+                <h1>OYUNCU BİLGİLERİ</h1>
+                <a data-theme="c" href="#home" data-iconpos="notext" data-role="button" data-icon="home" title="Home" data-transition="slide" data-direction="reverse">Home</a>
+                
+                <!--
+                    <a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a>
+                    <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">home</button>
+                    <a href="index.html" data-icon="check" data-theme="b">Save</a>
+                
+                <a href="index.html" data-icon="check" data-theme="b"></a>
+                -->
+                
+            </div>
+            <div class="ui-content" role="main">
+                <ul data-role="listview"  id="player-data" data-inset="true">
+                    
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>
+        </div>
+        
+        <div data-role="page" id="news">
+            <div data-role="header" data-theme="a">
+                 <a data-theme="c" href="#home" data-iconpos="notext" data-role="button" data-icon="back" title="Back" data-transition="slide" data-direction="reverse">Back</a>
+                 <h1>HABERLER</h1> 
+            </div>
+            <div data-role="content">
+                <!--<ul data-role="listview"  id="news-list" data-inset="true" data-filter="true">
+                    <li data-role="list-divider" data-theme="a" data-inset="true">Haberler</li>
+                    
+                </ul>-->
+                <form>
+                    <input data-type="search" id="searchForNews">
+                </form>
+                <div data-role="collapsible-set" data-inset="true" data-filter="true" id="news-list" data-input="#searchForNews">
+                    <!--<ul id="news-list-int" data-role="listview" data-inset="true" data-filter="true" data-corners="true">
+                        
+                    </ul>-->
+                </div>
+                
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>  
+        </div>
+        
+        <div data-role="page" id="news-details">
+            <div data-role="header" data-theme="a">
+                <a data-theme="c" href="#news" data-iconpos="notext" data-role="button" data-icon="back" title="Back" data-transition="slide" data-direction="reverse">Back</a>
+                <h1>HABER DETAYLARI</h1>
+                <a data-theme="c" href="#home" data-iconpos="notext" data-role="button" data-icon="home" title="Home" data-transition="slide" data-direction="reverse">Home</a>
+            </div>
+            <div class="ui-content" role="main">
+                <ul data-role="listview"  id="news-data" data-inset="true">
+            
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>
+        </div>
+        
+        <div data-role="page" id="scores">
+            <div data-role="header" data-theme="a">
+                 <a data-theme="c" href="#home" data-iconpos="notext" data-role="button" data-icon="back" title="Back" data-transition="slide" data-direction="reverse">Back</a>
+                 <h1>SONUÇLAR</h1> 
+            </div>
+            <div data-role="content">
+                <form>
+                    <input data-type="search" id="searchForScores">
+                </form>
+                <div data-role="collapsible-set" data-inset="true" data-filter="true" id="scores-list" data-input="#searchForScores">
+                    <!--<ul id="news-list-int" data-role="listview" data-inset="true" data-filter="true" data-corners="true">
+                        
+                    </ul>-->
+                </div>
+                <!--<ul data-role="listview"  id="scores-list" data-inset="true" data-filter="true">
+                    
+                </ul>-->
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>  
+        </div>
+        
+        <div data-role="page" id="games">
+            <div data-role="header" data-theme="a">
+                 <a data-theme="c" href="#home" data-iconpos="notext" data-role="button" data-icon="back" title="Back" data-transition="slide" data-direction="reverse">Back</a>
+                 <h1>FİKSTÜR</h1> 
+            </div>
+            <div data-role="content">
+                <ul data-role="listview"  id="games-list" data-inset="true" data-filter="true">
+                    
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h1>Copyright 2015</h1>
+            </div>  
+        </div>
+    </body>
+</html>
